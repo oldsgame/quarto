@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="shortcut icon" href="favicon.ico" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#000000" />
+        <title>Old's game</title>
+    </head>
+    <style>
+    table {
+      border-collapse: collapse;
+    }
+
+    td {
+      width: 100px;
+      height: 100px;
+      font-size: 3em;
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: center;
+      vertical-align: middle;
+      border: none;
+      cursor: pointer;
+      user-select: none;
+      padding: 0;
+      background-image: url("assets/board_tile.svg");
+      background-size: cover;
+    }
+    .quarto_piece {
+        width: 60px;
+        height: 60px;
+        vertical-align: middle;
+    }
+    #board-border {
+        background-image: url("assets/board_border.svg");
+        background-size:contain;
+        background-repeat: no-repeat;
+        padding: 20px;
+        text-align:center;
+        vertical-align: middle;
+    }
+    </style>
+    <body>
+        <h2 id="currentPlayer"></h2>  
+        <div id="board-border">
+            <table>
+                <tr>
+                    <td id="D1"></td>
+                    <td id="D2"></td>
+                    <td id="D3"></td>
+                    <td id="D4"></td>
+                </tr>
+                <tr>
+                    <td id="C1"></td>
+                    <td id="C2"></td>
+                    <td id="C3"></td>
+                    <td id="C4"></td>
+                </tr>
+                <tr>
+                    <td id="B1"></td>
+                    <td id="B2"></td>
+                    <td id="B3"></td>
+                    <td id="B4"></td>
+                </tr>
+                <tr>
+                    <td id="A1"></td>
+                    <td id="A2"></td>
+                    <td id="A3"></td>
+                    <td id="A4"></td>
+                </tr>
+            </table>
+        </div>
+        <h3 id="winnerMessage"></h3>
+    </body>
+    <script src="app.js"></script>
+</html>
